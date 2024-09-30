@@ -1,0 +1,101 @@
+1. Criação de um Novo Banco NoSQL
+
+Comando :
+
+use UC4ATV
+
+Resultado :
+
+switched to db UC4ATV
+
+2. Inclusão dos Dados de Nome, Descrição, Estoque e Fabricante para a Tabela “Produto”
+
+Comando:
+
+
+db.Produto.insertMany([
+    { nome: "celular", descricao: "Samsung", estoque: 10, fabricante: "Hyper-x" },
+    { nome: "notebook", descricao: "Dell", estoque: 50, fabricante: "G-force" },
+    { nome: "monitor", descricao: "LG", estoque: 20, fabricante: "Hyper-x" }
+])
+
+Resultado :
+
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('66a2f97a30cbe33cbbdc2496'),
+    '1': ObjectId('66a2f97a30cbe33cbbdc2497'),
+    '2': ObjectId('66a2f97a30cbe33cbbdc2498')
+  }
+} 
+
+3. Atualização de Dados de Produto
+
+Comando :
+
+
+db.PRODUTO.updateOne(
+   { nome: "celular" },
+   { $set: { estoque: 120 } }
+)
+
+Resultado :
+
+
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+} 
+
+4. Busca de Produto por Nome
+
+Comando :
+
+
+db.Produto.find({ nome: "celular" }).pretty()
+
+Resultado :
+
+{
+  _id: ObjectId('66a2f97a30cbe33cbbdc2496'),
+  nome: 'celular',
+  descricao: 'Samsung',
+  estoque: 120,
+  fabricante: 'Hyper-x'
+}
+5. Busca de Produto por Fabricante
+
+Comando:
+
+db.Produto.find({ fabricante: "Hyper-x" }).pretty()
+
+Resultado :
+
+
+{
+  _id: ObjectId('66a2f97a30cbe33cbbdc2496'),
+  nome: 'celular',
+  descricao: 'Samsung',
+  estoque: 10,
+  fabricante: 'Hyper-x'
+}
+
+{
+  _id: ObjectId('66a2f97a30cbe33cbbdc2498'),
+  nome: 'monitor',
+  descricao: 'LG',
+  estoque: 20,
+  fabricante: 'Hyper-x'
+}
+
+
+Salvando em Arquivo TXT
+Abra um editor de texto (como Notepad ou qualquer editor de código).
+Copie e cole os comandos e resultados fornecidos acima.
+Salve o arquivo com o nome comandos_mongodb.txt.
+Certifique-se de que o arquivo comandos_mongodb.txt contenha todos os comandos e resultados esperados para que você possa enviá-lo como parte da sua atividade. Se precisar de mais alguma coisa, estou à disposição!
