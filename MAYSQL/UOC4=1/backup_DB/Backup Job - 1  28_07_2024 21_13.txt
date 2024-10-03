@@ -1,0 +1,22 @@
+29/07/2024 00:13 Iniciando job "Backup Job - 1 " - "Full". Computador "ALEXGMAX". App v."12.7.24" 
+29/07/2024 00:13 Connecting to "MySQL Server": "localhost". 
+29/07/2024 00:13 Connected to "(8.3.0)". 
+29/07/2024 00:13 A pasta de backup "C:\WINDOWS\SystemTemp\SISTEMA\Pranas.NET\SBF\c8f60e45-fe08-4275-9c80-ad440e99f0fc\backup" tem "349,369GB" de espaco livre. A pasta temporária "C:\WINDOWS\SystemTemp\SISTEMA\Pranas.NET\SBF\c8f60e45-fe08-4275-9c80-ad440e99f0fc" tem "349,369GB" de espaco livre. 
+29/07/2024 00:13 Backing up "localhost" databases with "mysqldump.exe: 8.2.0.0" 
+29/07/2024 00:13 Backing up "uc4atividades" with "Full" backup type. 
+29/07/2024 00:13 O banco de dados "uc4atividades" foi copiado com sucesso para "C:\WINDOWS\SystemTemp\SISTEMA\Pranas.NET\SBF\c8f60e45-fe08-4275-9c80-ad440e99f0fc\backup\uc4atividades202407282113.sql" : 27,272KB" 
+29/07/2024 00:13 Comprimindo o arquivo "C:\WINDOWS\SystemTemp\SISTEMA\Pranas.NET\SBF\c8f60e45-fe08-4275-9c80-ad440e99f0fc\backup\uc4atividades202407282113.sql" com arquivador Interno Criptografia: "Desligado" 
+29/07/2024 00:13 Cópia de "uc4atividades" comprimida com sucesso para "(uc4atividades202407282113.zip : 10,145KB)" 
+29/07/2024 00:13 Conectando ao destino "Pasta" "C:\Users\user\Desktop\backup_DB" 
+29/07/2024 00:13 Lendo informacão da pasta pelo caminho: "C:\Users\user\Desktop\backup_DB" 
+29/07/2024 00:13 O destino atual da pasta é "C:\Users\user\Desktop\backup_DB" 
+29/07/2024 00:13 Enviando backup de "uc4atividades" para o destino "Pasta" "C:\Users\user\Desktop\backup_DB" 
+29/07/2024 00:13 Carregando "uc4atividades202407282113.zip" local para remoto "uc4atividades202407282113.zip" na pasta "C:\Users\user\Desktop\backup_DB" 
+29/07/2024 00:13 Carregado 100.00 % (average speed = 845,02 KB/s) 
+29/07/2024 00:13 Verificando o arquivo remoto "uc4atividades202407282113.zip" com o local "uc4atividades202407282113.zip" 
+29/07/2024 00:13 Limpando backups no job "Backup Job - 1 " 
+29/07/2024 00:13 Limpando backups de "uc4atividades" banco de dados em "Pasta" destino "C:\Users\user\Desktop\backup_DB" 
+29/07/2024 00:13 Cleanup of "uc4atividades" completed. 
+29/07/2024 00:13 Desconectando do destino "Pasta" "C:\Users\user\Desktop\backup_DB" 
+29/07/2024 00:13 Deleting temporary files. 
+29/07/2024 00:13 Job "Backup Job - 1 " finalizado 
